@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom'
 import './Login.css'
 
 const Login
-    = () => {
+    = (props) => {
         const [un,setUn] =useState('');
         const [pass,setPass] =useState('');
         const[error,setError]=useState(false);
@@ -41,6 +41,7 @@ const Login
 
         return (
             <div >
+            <h1>{props.a}</h1>
                 <form className='name'>
                     <h1 className='aa'>Sign-IN</h1>
 
